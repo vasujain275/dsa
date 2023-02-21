@@ -1,15 +1,11 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-    int a = 5;
-    for (int i = a; i > 0; i--)
-    {
-        for (int j = i; j > 0; j--)
-        {
-            cout<<"*";
-        }
-        cout<<endl;
-    }
+
+int main(){
+    int marks[4] = {99,78,74,36};
+    int* p = marks;
+    cout<<*(p+3);
+
+    
     
 }
