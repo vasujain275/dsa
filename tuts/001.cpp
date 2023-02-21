@@ -1,9 +1,15 @@
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    int sum = 6;
-    cout<<"Hello World"<<" "<<sum;
-    return 0;
+    int a = 5;
+    for (int i = a; i > 0; i--)
+    {
+        for (int j = i; j > 0; j--)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
 }
