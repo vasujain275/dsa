@@ -4,15 +4,23 @@ using namespace std;
 
 int main(){
     int n;
+    bool isPrime=1;
     int i=2;
     cout<<"Enter the Number: ";
     cin>>n;
-    while(i<n){
+    for (int i = 2; i < n; i++)
+    {
         if (n%i==0){
-            cout<<"It is not Prime";
+            isPrime=0;
+            break;
         }
-        i++;
     }
-    cout<<"It is a prime number";
+    if (isPrime=0)
+    {
+        cout<<"Not a Prime Number";
+    }
+    else{
+        cout<<"It is a Prime Number";
+    }
     return 0;
 }
