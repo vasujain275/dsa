@@ -14,7 +14,7 @@ int main(){
     int arr[5];
     cout<<"Enter the Values for Array:\n";
     for (int i = 0; i < 5; i++)
-    {
+    {   
         cin>>arr[i];
     }
     cout<<"Sum of Array's Elements is: "<<sumArray(arr,5);
