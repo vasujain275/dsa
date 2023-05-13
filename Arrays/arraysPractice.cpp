@@ -5,7 +5,7 @@ void arrayPrint(int n[],int size)
 {
     for (int i = 0; i < size; i++)
     {
-        cout<<n[i]<<"\n";
+        cout<<n[i]<<"\n";   
     }
 }
 

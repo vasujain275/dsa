@@ -12,12 +12,11 @@ void printArr(int arr[],int size)
 void swapArray(int arr[],int size)
 {
     int a;
-    for (int i = 0; i < size-1;)
+    for (int i = 0; i < size-1;i+=2)
     {
         a=arr[i];
         arr[i]=arr[i+1];
         arr[i+1]=a;
-        i=i+2;
     }
     
 }
