@@ -1,23 +1,36 @@
 #include <iostream>
 using namespace std;
 
-void arrayPrint(int n[],int size)
+void arrayPrint(int n[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        cout<<n[i]<<"\n";   
+        cout << n[i] << "\n";
     }
 }
 
-int main(){
-    int a[10]={1,2,3,4,5,6,7,8,9,10};
-    cout<<"\nPrinting the Array Before:\n";
-    arrayPrint(a,10);
-    for (int i = 0; i < 10; i++)
+int main()
+{
+    int arr[9] = {0, 2, 2, 1, 0, 1, 1, 0, 2};
+    int n = 9;
+    for (int i = 0, j = n - 1; i < j;)
     {
-        a[i] = 1;
+        while (arr[i] == 0 && i < j)
+        {
+            i++;
+        }
+        while (arr[j] == 2 && i < j)
+        {
+            j--;
+        }
+        while(arr[i]==2&&arr[j]==0&&i<j)
+        {
+            swap(arr[i],arr[j]);
+            i++;
+            j--;
+
+        }
+        
     }
-    cout<<"\nPrinting the Array After:\n";
-    arrayPrint(a,10);
-    return 0;
+    arrayPrint(arr, 9);
 }
