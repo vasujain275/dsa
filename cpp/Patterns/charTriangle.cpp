@@ -1,0 +1,29 @@
+/*
+A
+B B
+C C C
+D D D D
+E E E E E
+*/
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    int a=65;
+    char b;
+    cout<<"Enter the Value of n:";
+    cin>>n;
+    for (int i = 1; i <= n; i++)
+    {
+        a = 65+i-1;
+        for (int j = 0; j < i; j++)
+        {
+            b=a;    
+            cout<<b<<" ";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
